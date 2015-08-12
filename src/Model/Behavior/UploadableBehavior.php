@@ -470,7 +470,7 @@ class UploadableBehavior extends Behavior
      */
     protected function _moveUploadedFile($source, $path)
     {
-        return move_uploaded_file($source, $path);
+        return rename($source, $path);
     }
 
     /**
